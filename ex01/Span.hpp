@@ -23,7 +23,7 @@ class Span
 		void	addNumber(int i);
 		int		shortestSpan();
 		int		longestSpan();
-		void	hyakuchki_canon();
+		void	hyakuchki_canon(int *arr);
 		//Getters
 		std::vector<int> getcont() const;
 		unsigned int  getSize() const;

@@ -85,7 +85,11 @@ int	Span::longestSpan()
 	return (l_p);
 }
 
-void	Span::hyakuchki_canon()
+void	Span::hyakuchki_canon(std::vector<int> k)
 {
-	
+	size_t s = k.size();
+	std::exception &e;
+	if (s > size)
+		throw e;
+	cont.insert(cont.end(), k.begin(), k.end());
 }

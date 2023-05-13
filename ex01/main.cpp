@@ -17,4 +17,8 @@ int main()
     }
     std::cout << mySpan.shortestSpan() << std::endl;
     std::cout << mySpan.longestSpan() << std::endl;
+	std::vector<int> k;
+	for(int i = 0; i < 10000; i++)
+		k.push_back(i);
+    hyakuchki_canon(k);
 }
