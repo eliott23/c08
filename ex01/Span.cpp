@@ -84,3 +84,8 @@ int	Span::longestSpan()
 
 	return (l_p);
 }
+
+void	Span::hyakuchki_canon()
+{
+	
+}
