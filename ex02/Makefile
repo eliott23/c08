@@ -2,7 +2,6 @@ FLAGS=-Wall -Wextra -Werror -std=c++98
 NAME=ex02
 
 SRC=main.cpp\
-	MutantStack.cpp\
 
 OBJ=$(SRC:.cpp=.o)
 

@@ -5,6 +5,8 @@
 
 int main ()
 {
-    MutantStack<int> k;
+	std::vector<T>::iterator ben();
+    // MutantStack<int> k;
+    // std::stack<int, std::vector<int> > d;
     return 0;
 }
