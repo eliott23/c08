@@ -7,7 +7,7 @@
 # include <vector>
 
 template <class T>
-class MutantStack : public std::stack<int, std::vector<int> >
+class MutantStack : public std::stack<T>
 {
 	public:
 		// Constructors
@@ -21,12 +21,12 @@ class MutantStack : public std::stack<int, std::vector<int> >
 		MutantStack & operator=(const MutantStack &assign);
 
 		// Subject
-		typedef typename std::vector<T>::iterator iterator;
+		typedef typename std::stack<T>::container_type::iterator iterator;
 		iterator begin();
 		iterator end();
 		
 	private:
-	std::vector<T> &u_vec;
+	std::deque<T> &u_vec;
 };
 
 # include "MutantStack.tpp"
