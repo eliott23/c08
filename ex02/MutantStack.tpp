@@ -7,8 +7,9 @@ MutantStack<T>::MutantStack() : u_vec(this->c)
 }
 
 template <class T>
-MutantStack<T>::MutantStack(const MutantStack &copy) : u_vec(copy->c)
+MutantStack<T>::MutantStack(MutantStack &copy) : u_vec(copy.c)
 {
+	std::cout << "copy" << std::endl;
 }
 
 // Destructor
@@ -21,12 +22,19 @@ MutantStack<T>::~MutantStack()
 template <class T>
 MutantStack<T> & MutantStack<T>::operator=(const MutantStack &assign)
 {
-	u_vec = assign.container();
+	std::cout << "hdibndb" << std::endl;
+	u_vec = assign.c;
 	return *this;
 }
 
 template <class T>
-std::vector<T>::iterator MutantStack<T>::begin()
+typename MutantStack<T>::iterator MutantStack<T>::begin()
 {
 	return this->c.begin();
+}
+
+template <class T>
+typename MutantStack<T>::iterator MutantStack<T>::end()
+{
+	return (this->c.end());
 }

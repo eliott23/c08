@@ -12,16 +12,18 @@ class MutantStack : public std::stack<int, std::vector<int> >
 	public:
 		// Constructors
 		MutantStack();
-		MutantStack(const MutantStack &copy);
+		MutantStack(MutantStack &copy);
 		
 		// Destructor
 		~MutantStack();
-		
+	
 		// Operators
 		MutantStack & operator=(const MutantStack &assign);
+
 		// Subject
-		// typedef std::vector<T> iterator;
-		std::vector<T>::iterator begin();
+		typedef typename std::vector<T>::iterator iterator;
+		iterator begin();
+		iterator end();
 		
 	private:
 	std::vector<T> &u_vec;
