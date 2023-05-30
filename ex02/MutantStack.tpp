@@ -21,6 +21,7 @@ MutantStack<T>::~MutantStack()
 template <class T>
 MutantStack<T> & MutantStack<T>::operator=(const MutantStack &assign)
 {
+	std::cout << "fdvdfbb" << std::endl;
 	this->u_vec = assign.c;
 	return *this;
 }
