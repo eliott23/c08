@@ -29,4 +29,7 @@ int main()
     {
         std::cout << "Expected error" << std::endl;
     }
+    anotherspan = mySpan;
+    std::cout << anotherspan.shortestSpan() << std::endl;
+    std::cout << anotherspan.longestSpan() << std::endl;
 }
